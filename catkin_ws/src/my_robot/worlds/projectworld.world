@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.6'>
   <world name='default'>
     <plugin name='hellosam' filename='libhellosam.so'/>
     <light name='sun' type='directional'>
