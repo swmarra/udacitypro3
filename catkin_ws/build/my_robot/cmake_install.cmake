@@ -1,8 +1,8 @@
-# Install script for directory: /home/workspace/udacitypro3/catkin_ws/src/my_robot
+# Install script for directory: /home/robond/workspace/udacitypro3/catkin_ws/src/my_robot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/workspace/udacitypro3/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/robond/workspace/udacitypro3/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,23 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robond/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robot.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robot.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot/cmake" TYPE FILE FILES
-    "/home/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robotConfig.cmake"
-    "/home/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robotConfig-version.cmake"
+    "/home/robond/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robotConfig.cmake"
+    "/home/robond/workspace/udacitypro3/catkin_ws/build/my_robot/catkin_generated/installspace/my_robotConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot" TYPE FILE FILES "/home/workspace/udacitypro3/catkin_ws/src/my_robot/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot" TYPE FILE FILES "/home/robond/workspace/udacitypro3/catkin_ws/src/my_robot/package.xml")
 endif()
 

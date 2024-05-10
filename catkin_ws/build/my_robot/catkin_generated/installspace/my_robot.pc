@@ -1,4 +1,4 @@
-prefix=/home/workspace/udacitypro3/catkin_ws/install
+prefix=/home/robond/workspace/udacitypro3/catkin_ws/install
 
 Name: my_robot
 Description: Description of my_robot
