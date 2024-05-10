@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/robond/workspace/udacitypro3/catkin_ws/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/robond/workspace/udacitypro3/catkin_ws/build'
-export ROS_PACKAGE_PATH="/home/robond/workspace/udacitypro3/catkin_ws/src:$ROS_PACKAGE_PATH"
