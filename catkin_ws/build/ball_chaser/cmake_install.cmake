@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/workspace/udacity/catkin_ws/src/ball_chaser
+# Install script for directory: /home/workspace/udacitypro3/catkin_ws/src/ball_chaser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/workspace/udacity/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/workspace/udacitypro3/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,34 +38,34 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser/srv" TYPE FILE FILES "/home/ubuntu/workspace/udacity/catkin_ws/src/ball_chaser/srv/DriveToTarget.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser/srv" TYPE FILE FILES "/home/workspace/udacitypro3/catkin_ws/src/ball_chaser/srv/DriveToTarget.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser/cmake" TYPE FILE FILES "/home/ubuntu/workspace/udacity/catkin_ws/build/ball_chaser/catkin_generated/installspace/ball_chaser-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ball_chaser/cmake" TYPE FILE FILES "/home/workspace/udacitypro3/catkin_ws/build/ball_chaser/catkin_generated/installspace/ball_chaser-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/workspace/udacity/catkin_ws/devel/include/ball_chaser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/workspace/udacitypro3/catkin_ws/devel/include/ball_chaser")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ubuntu/workspace/udacity/catkin_ws/devel/share/roseus/ros/ball_chaser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/workspace/udacitypro3/catkin_ws/devel/share/roseus/ros/ball_chaser")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/workspace/udacity/catkin_ws/devel/share/common-lisp/ros/ball_chaser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/workspace/udacitypro3/catkin_ws/devel/share/common-lisp/ros/ball_chaser")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ubuntu/workspace/udacity/catkin_ws/devel/share/gennodejs/ros/ball_chaser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/workspace/udacitypro3/catkin_ws/devel/share/gennodejs/ros/ball_chaser")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/ubuntu/workspace/udacity/catkin_ws/devel/lib/python3/dist-packages/ball_chaser")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/workspace/udacitypro3/catkin_ws/devel/lib/python2.7/dist-packages/ball_chaser")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/workspace/udacity/catkin_ws/devel/lib/python3/dist-packages/ball_chaser")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/workspace/udacitypro3/catkin_ws/devel/lib/python2.7/dist-packages/ball_chaser")
 endif()
 

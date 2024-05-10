@@ -1,4 +1,4 @@
-prefix=/home/ubuntu/workspace/udacity/catkin_ws/devel
+prefix=/home/workspace/udacitypro3/catkin_ws/devel
 
 Name: my_robot
 Description: Description of my_robot

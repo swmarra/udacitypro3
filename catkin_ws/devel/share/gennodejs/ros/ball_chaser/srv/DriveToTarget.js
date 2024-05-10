@@ -141,7 +141,7 @@ class DriveToTargetResponse {
 
   static getMessageSize(object) {
     let length = 0;
-    length += _getByteLength(object.msg_feedback);
+    length += object.msg_feedback.length;
     return length + 4;
   }
 

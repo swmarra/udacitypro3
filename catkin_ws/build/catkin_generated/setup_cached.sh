@@ -7,8 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ubuntu/workspace/udacity/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/usr/local/cuda-12.2/lib64:'
-export PWD='/home/ubuntu/workspace/udacity/catkin_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/ubuntu/workspace/udacity/catkin_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/ubuntu/workspace/udacity/catkin_ws/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH='/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/usr/local/cuda-9.0/lib64:/usr/lib/x86_64-linux-gnu:/usr/lib:/usr/local/lib/x86_64-linux-gnu:/usr/local/lib/i386-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'
+export PKG_CONFIG_PATH='/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig'
+export PWD='/home/workspace/udacitypro3/catkin_ws/build'
+export PYTHONPATH='/opt/ros/kinetic/lib/python2.7/dist-packages'

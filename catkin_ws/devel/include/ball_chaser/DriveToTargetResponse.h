@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <memory>
+#include <map>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -33,7 +33,7 @@ struct DriveToTargetResponse_
 
 
 
-   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _msg_feedback_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _msg_feedback_type;
   _msg_feedback_type msg_feedback;
 
 
@@ -61,20 +61,6 @@ ros::message_operations::Printer< ::ball_chaser::DriveToTargetResponse_<Containe
 return s;
 }
 
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator==(const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator1> & lhs, const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator2> & rhs)
-{
-  return lhs.msg_feedback == rhs.msg_feedback;
-}
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator!=(const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator1> & lhs, const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator2> & rhs)
-{
-  return !(lhs == rhs);
-}
-
-
 } // namespace ball_chaser
 
 namespace ros
@@ -84,17 +70,13 @@ namespace message_traits
 
 
 
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
+
+// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
 
-template <class ContainerAllocator>
-struct IsMessage< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
-  : TrueType
-  { };
 
-template <class ContainerAllocator>
-struct IsMessage< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> const>
-  : TrueType
-  { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
@@ -104,6 +86,16 @@ struct IsFixedSize< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsFixedSize< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>
@@ -146,9 +138,9 @@ struct Definition< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "string msg_feedback\n"
-"\n"
-;
+    return "string msg_feedback\n\
+\n\
+";
   }
 
   static const char* value(const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator>&) { return value(); }
@@ -186,7 +178,7 @@ struct Printer< ::ball_chaser::DriveToTargetResponse_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::ball_chaser::DriveToTargetResponse_<ContainerAllocator>& v)
   {
     s << indent << "msg_feedback: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.msg_feedback);
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.msg_feedback);
   }
 };
 
