@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/workspace/udacity/catkin_ws/devel/setup.sh
