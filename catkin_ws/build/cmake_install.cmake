@@ -127,6 +127,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/robond/workspace/udacitypro3/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/robond/workspace/udacitypro3/catkin_ws/build/my_robot/cmake_install.cmake")
+  include("/home/robond/workspace/udacitypro3/catkin_ws/build/teleop_twist_keyboard/cmake_install.cmake")
   include("/home/robond/workspace/udacitypro3/catkin_ws/build/ball_chaser/cmake_install.cmake")
   include("/home/robond/workspace/udacitypro3/catkin_ws/build/pgm_map_creator/cmake_install.cmake")
 
