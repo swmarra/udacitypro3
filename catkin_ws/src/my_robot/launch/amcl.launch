@@ -20,10 +20,10 @@
 	<param name="update_min_d" value="0.1"/>
 	<param name="resample_interval" value="3.0"/>
 
-	<param name="laser_max_beams" value="25.0"/>
+	<param name="laser_max_beams" value="30.0"/>
 	<param name="laser_z_hit" value="0.9"/>
 	<param name="laser_z_rand" value="0.1"/>
-	<param name="laser_max_range" value="4.0"/>
+	<param name="laser_max_range" value="20.0"/>
 	<param name="laser_min_range" value="0.1"/>
 	<param name="laser_sigma_hit" value="0.2"/>
   	</node>
